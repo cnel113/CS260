@@ -1,0 +1,130 @@
+/* navy blue: #0B1E33 teal: #00537A yellow: #F5A201 Fonts: Didact Gothic (sans serif)
+Merienda (stylized serif)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 50px;
+    color: #00537A; /* teal*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 20px;
+    color: #0B1E33; /* navy */
+}
+
+p {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #0B1E33; /* navy */
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+li {
+    color: #0B1E33 !important; /* teal */
+}
+
+a {
+    color: #FFF;
+}
+
+img {
+  max-width: 100%;  
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    max-width: 80%;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    
+}
+
+.header-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 60%;
+}
+
+.header-visual img {
+    max-height: 700px;
+}
+
+
+.feature-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 33%;
+    background-color: #F5A201; /*yellow*/
+    height: 400px;
+}
+
+.feature img {
+    max-height: 250px;
+}
+
+.feature p {
+    color: #FFFFFF; /* white */
+    font-size: 26px;
+}
+
+.button {
+    background-color: #F5A201; /* yellow */
+    padding: 20px;
+    color: #0B1E33; /* navy */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.bg-dark {
+    background-color: #00537A !important;  /*teal*/
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end !important;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+}
