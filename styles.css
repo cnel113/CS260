@@ -17,6 +17,16 @@ h1, h2, h3 {
     margin-bottom: 10px;
 }
 
+h2 {
+    font-size: 40px;
+
+}
+
+h3 {
+    font-size: 30px;
+
+}
+
 h4 {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 20px;
@@ -52,7 +62,7 @@ img {
 }
 
 .content {
-    /*max-width: 80%;*/
+    max-width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,6 +76,7 @@ img {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    max-width: 90%;
 }
 
 .header-copy {
@@ -104,7 +115,9 @@ img {
     max-width: 100%;
     background-color: #F5A201; /*yellow*/
     max-height: 90%;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    width: 20em;
+    height: 20em;
 }
 
 .feature img {
@@ -121,8 +134,11 @@ img {
     padding: 20px;
     color: #0B1E33; /* navy */
     font-weight: bold;
-    margin-top: 20px;
+    max-width: 10em;
+    text-align: center;
+    /*margin-top: 20px;
     margin-bottom: 20px;
+    */
 
 }
 
@@ -163,6 +179,140 @@ img {
    align-self: flex-start;
 }
 
+ .search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1.5em;
+    background-color: #0B1E33;
+    width: 100%;
+    padding: 1em;
+
+}
+
+.search-headers {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 10px #0B1E33;
+    max-width: 90%;
+
+}
+
+.search-headers h4 {
+    margin-left: 2em;
+    margin-right: 2em;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.search-fields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    border-right: .75em solid #0B1E33;
+    max-width: 90%;
+    min-width: 0;
+
+}
+
+.search-fields p {
+    margin-left: 2em;
+    margin-right: 2em;
+    color: #0B1E33;
+}
+.search-fields-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.search-button {
+    align-self: flex-end;
+}
+
+.search-header {
+    flex-direction: column;
+}
+
+.vacation-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.vacation {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    position: relative;
+    max-width: 33%;
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+.vacation p {
+    color: #0B1E33; 
+    font-size: 26px;
+}
+
+.offer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.offer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-top: 2px solid #0B1E33;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: .5em;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me img {
+    max-height: 30em;
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #F5A201;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    background-color: #0B1E33;
+    padding: 1.5em;
+}
+
+.footer-container h4, a{
+    color: #FFFFFF;
+}
+
+.footer-list {
+    
+}
+
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
     .content {
@@ -191,14 +341,16 @@ img {
         max-height: 700px;
     }
     
+    
     .feature-container {
-    flex-direction: row;
-    justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-around;
     }
     
     .feature {
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         max-width: 33%;
         background-color: #F5A201; /*yellow*/
         height: 400px;
@@ -215,6 +367,23 @@ img {
     
     .option-list h2,h4 {
        align-self: center;
+    }
+    
+    .vacation {
+        max-width: 33%;
+    }
+    
+    .about-me {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .about-me p {
+        /*margin-left: 3em;*/
+        max-width: 50%;
+    }
+    
+    .value {
+        max-width: 30%;
     }
 
 }
